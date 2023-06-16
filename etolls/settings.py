@@ -81,14 +81,14 @@ WSGI_APPLICATION = 'etolls.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get("etolls"),
-        'USER': os.environ("postgres"),
-        'PASSWORD':os.environ("2357"),
-        'HOST': os.environ("localhost"),
-        'PORT': os.environ.get("5432"),
-    }
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "postgres",
+            "PASSWORD": "^tPRxcH6%5Y6",
+            "USER": "postgres",
+            "PORT": "5432",
+            "HOST": "db.ydklyuxygyppsmyzsfgv.supabase.co"
+}
 }
 
 
