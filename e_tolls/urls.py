@@ -1,6 +1,6 @@
 from django.urls import path
-from django import views
+from . import views
 
 urlpatterns=[
-    path('/transactions',views.transactions,name='transactions')
+    path('',views.verify,name='verify'),
 ]

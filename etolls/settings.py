@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-2b9)g270g#k*23yu-krua#-me-^p_00s%@ru+i)uevcuji!$#&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -61,7 +61,7 @@ ROOT_URLCONF = 'etolls.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
