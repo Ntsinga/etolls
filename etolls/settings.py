@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-2b9)g270g#k*23yu-krua#-me-^p_00s%@ru+i)uevcuji!$#&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'etolls.wsgi.application'
+WSGI_APPLICATION = 'etolls.wsgi.app'
 
 
 # Database
