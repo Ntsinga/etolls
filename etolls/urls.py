@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('e_tolls.urls'))
+    path('',include('e_tolls.urls')),
 ]
 
 # add at the last
