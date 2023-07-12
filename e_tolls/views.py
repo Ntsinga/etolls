@@ -1,15 +1,22 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from .models import User,Transaction
 
-# Create your views here.
+
+
+
+
+# firebase= pyrebase.initialize_app(config)
+# authe=firebase.auth()
+# database=firebase.database()
 
 def verify(request):
+    # userID= database.child('User Data').child('userID').get().val()
+    #     stack = database.child('Data').child('Stack').get().val()
+    #     framework = database.child('Data').child('Framework').get().val()
     
     # deducted_credits=2
     # user =User.objects.get(id=user_id)
 
-    # if user is None:
+    # if userID is None:
     return render(request,"index.html")
 
     # if(user.available_credits<deducted_credits):
@@ -21,3 +28,6 @@ def verify(request):
     # user.available_credits-=deducted_credits
     # user.save()
     # return HttpResponse()
+
+
+
