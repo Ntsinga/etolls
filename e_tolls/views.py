@@ -1,12 +1,13 @@
 from django.shortcuts import render
+# import firebase_admin
+# from firebase_admin import credentials
+# from firebase_admin import firestore
 
 
-
-
-
-# firebase= pyrebase.initialize_app(config)
-# authe=firebase.auth()
-# database=firebase.database()
+# cred=credentials.Certificate('./ServiceAccountKey.json')
+# default_app=firebase_admin.initialize_app(cred)
+# db=firestore.client()
+# firebase=db.FirebaseApplication('',None)
 
 def verify(request):
     # userID= database.child('User Data').child('userID').get().val()
@@ -17,7 +18,7 @@ def verify(request):
     # user =User.objects.get(id=user_id)
 
     # if userID is None:
-    return render(request,"index.html")
+    return render(request,"index.html",status=404)
 
     # if(user.available_credits<deducted_credits):
     #     #return error message
