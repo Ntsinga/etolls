@@ -1,5 +1,4 @@
 import datetime
-from django.shortcuts import render
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
@@ -13,7 +12,9 @@ firebase=firebase.FirebaseApplication("https://etolls-8d93b-default-rtdb.firebas
 
 def verify(request):
 
-    
+    #Get userID
+    # uid=request.POST['UID']
+
     # doc = db.collection('users').document('yMtsidNmTFUsk3CyS3rtGOruo8v1').get()
     # s=doc.to_dict()
     # print(s)
@@ -97,7 +98,7 @@ def verify(request):
     "amount":parking_rate,
     "balance":credits,
     "date":timestamp,
-    "type":"credit",
+    "type":"debit",
     "user":"bro"
     })
 
