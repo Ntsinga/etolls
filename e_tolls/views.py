@@ -10,7 +10,8 @@ def verify(request):
     # user =User.objects.get(id=user_id)
 
     # if user is None:
-    return render(request,"index.html",status=200)
+    return HttpResponse('Success',content_type=text/plain)
+    # return render(request,"index.html",status=200)
 
     # if(user.available_credits<deducted_credits):
     #     #return error message
