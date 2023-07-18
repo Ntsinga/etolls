@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns=[
-    path('',views.verify,name='index'),
+    path('update-message',views.verify,name='index'),
 ]
