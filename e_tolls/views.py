@@ -90,9 +90,8 @@ def verify(request):
         
 
         #Calculate the amount of credits to be deducted
-        if(total_minutes>30):
-
-            parking_rate=total_minutes/30
+        parking_rate=total_minutes/20
+        if(total_minutes>20):
             credits=available_credits-parking_rate
             print(credits)
         else:
